@@ -1,0 +1,149 @@
+.wrapper {
+}
+.header {
+  overflow: hidden;
+  padding: 10px 0;
+		&__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+		}
+
+		&__logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      @media (max-width: 600px) {
+        gap: 10px;
+      }
+		}
+
+		&__logo-picture {
+      max-width: 60px;
+      &img{
+        max-width: 100%;
+      }
+      @media (max-width: 600px) {
+        max-width: 40px;
+      }
+      cursor: pointer;
+      &:active{
+        animation: active 1s ease;
+        @keyframes active {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+      &:hover{
+        animation: active 1s ease;
+        @keyframes active {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+		}
+
+		&__logo-name {
+      font-weight: 600;
+      font-size: 33px;
+      @media (max-width: 1200px) {
+        font-size: 24px;
+      }
+      @media (max-width: 600px) {
+        font-size: 16px;
+      }
+		}
+
+		&__menu {
+		}
+
+		&__menu-gamename {
+      text-transform: uppercase;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 26px;
+      transition: 0.3s ease;
+      padding: 0 0 0 20px;
+      border-left: 3px solid #fafafa;
+      @media (max-width: 1200px) {
+        font-size: 24px;
+      }
+      @media (max-width: 600px) {
+        font-size: 16px;
+        padding: 0 0 0 10px;
+        border-left: 3px solid #fafafa;
+      }
+      &:hover{
+        color: rgba(255, 255, 255, 0.658);
+        padding: 0 0 0 5px;
+        border-left: 1px solid #fafafa;
+      }
+      &:active{
+        color: rgba(255, 255, 255, 0.658);
+        padding: 0 0 0 5px;
+        border-left: 1px solid #fafafa;
+      }
+		}
+}
+.container {
+}
+
+.header {
+		&__gamelist {
+      transition: 1s ease;
+      position: fixed;
+      width: 300px;
+      top: 100px;
+      right: -400px;
+		}
+    
+}
+.header {
+
+		&__hispuddle2024 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 200px;
+      background-image: url(../img/HorrorStoryAlpha\ \(DEBUG\)\ 18.10.2024\ 20_45_18.png);
+      background-size: cover;
+      margin: 0 0 10px 0;
+      cursor: pointer;
+      transition: 0.5s ease;
+      border-radius: 2px;
+      text-transform: uppercase;
+      &:hover{
+        transform: scale(1.05);
+      }
+      &:active{
+        transform: scale(1.05);
+      }
+		}
+
+		&__hispuddle2025 {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 260px;
+      height: 200px;
+      background-image: url(../img/dark-blur-blurred-gradient.jpg);
+      background-size: cover;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: 0.5s ease;
+      &:hover{
+        transform: scale(1.05);
+      }
+      &:active{
+        transform: scale(1.05);
+      }
+		}
+}
+
+.header__gamelist.active{
+  right: 0;
+}
