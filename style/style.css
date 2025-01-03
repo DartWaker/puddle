@@ -434,4 +434,36 @@ body {
 
 .header__gamelist.active {
   right: 0;
+}
+
+.footer {
+  padding: 70px 0;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.footer__title {
+  font-size: 40px;
+}
+.footer__text {
+  font-size: 20px;
+  text-align: center;
+}
+.footer__mail {
+  cursor: pointer;
+}
+.footer__telega {
+  max-width: 30px;
+  cursor: pointer;
+}
+.footer__inst {
+  max-width: 30px;
+  cursor: pointer;
+}
+.footer__social {
+  display: flex;
+  gap: 50px;
 }/*# sourceMappingURL=style.css.map */
