@@ -137,7 +137,7 @@ body {
   align-items: center;
   padding: 100px 0;
   flex-wrap: wrap;
-  gap: 60px;
+  gap: 40px;
 }
 @media (max-width: 600px) {
   .hero__wrapper {
@@ -238,7 +238,7 @@ body {
 }
 
 .about-test {
-  padding: 40px 0;
+  padding: 40px 0 80px 0;
 }
 .about-test__wrapper {
   display: flex;
@@ -256,6 +256,39 @@ body {
 .about-test__img {
   max-width: 300px;
 }
+.game {
+  padding: 50px 0;
+  background-color: #541515;
+}
+.game__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+.game__swiper {
+  overflow-y: auto;
+}
+.game__screen {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 0 20px 0;
+}
+@media (max-width: 1200px) {
+  .game__screen {
+    width: 1300px;
+  }
+}
+.game__img {
+  width: 300px;
+}
+.game__text {
+  display: block;
+  font-size: 24px;
+  text-align: center;
+}
+
 .header {
   position: relative;
   z-index: 10;
