@@ -237,6 +237,25 @@ body {
   padding: 0 0 0 21px;
 }
 
+.about-test {
+  padding: 40px 0;
+}
+.about-test__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about-test__box {
+  max-width: 700px;
+}
+.about-test__title {
+  margin: 0 0 20px 0;
+}
+.about-test__img {
+  max-width: 300px;
+}
 .header {
   position: relative;
   z-index: 10;
