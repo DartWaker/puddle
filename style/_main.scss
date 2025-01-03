@@ -1,0 +1,100 @@
+.hero {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/school.webp);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+
+.hero {
+
+		&__wrapper {
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 100px 0;
+      flex-wrap: wrap;
+      gap: 60px;
+      @media (max-width: 600px) {
+        padding: 40px 0;
+      }
+		}
+
+    &__button {
+      text-transform: uppercase;
+      display: inline-block;
+      font-weight: 600;
+      background-color: #fafafa;
+      padding: 10px 10px;
+      color: black;
+      border-radius: 20px;
+      transition: 0.3s ease;
+      box-shadow: 1px 3px 0px 2px black;
+      cursor: pointer;
+      &:hover{
+        background-color: #fafafa27;
+      }
+      &:active{
+        background-color: #fafafa27;
+        box-shadow: 1px 0px 0px 2px black;
+        transform: translatey(3px);
+      }
+    }
+
+		&__title {
+      font-size: 90px;
+      line-height: 100px;
+      text-shadow: 2px 1px 5px black;
+      text-transform: uppercase;
+      max-width: 1100px;
+      margin: 0 0 40px 0;
+      @media (max-width: 1800px) {
+        font-size: 70px;
+        line-height: 80px;
+      }
+      @media (max-width: 1700px) {
+        font-size: 60px;
+        line-height: 70px;
+      }
+      @media (max-width: 400px) {
+        font-size: 45px;
+        line-height: 50px;
+      }
+		}
+
+		&__text {
+      font-size: 25px;
+      text-shadow: 2px 1px 5px black;
+      margin: 0 0 20px 0;
+      @media (max-width: 400px) {
+        font-size: 20px;
+      }
+		}
+
+		&__picture {
+      @media (min-width: 1800px) {
+        transform: translate(-100px, 250px);
+      }
+		}
+
+		&__img {
+      max-width: 100%;
+		}
+}
+.container {
+}
