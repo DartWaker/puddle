@@ -264,6 +264,14 @@ body {
     transform: rotate(360deg);
   }
 }
+.about-test__img:hover {
+  animation: active 1s ease;
+}
+@keyframes active {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .game {
   padding: 50px 0;
   background-color: #541515;

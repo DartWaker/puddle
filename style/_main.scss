@@ -164,6 +164,14 @@
           }
         }
       }
+      &:hover{
+        animation: active 1s ease;
+        @keyframes active {
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
 		}
 
 		&__text {
