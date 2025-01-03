@@ -256,6 +256,14 @@ body {
 .about-test__img {
   max-width: 300px;
 }
+.about-test__img:active {
+  animation: active 1s ease;
+}
+@keyframes active {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .game {
   padding: 50px 0;
   background-color: #541515;
