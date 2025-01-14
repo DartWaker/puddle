@@ -3,6 +3,9 @@
   width: 100vw;
   position: relative;
   overflow: hidden;
+  @media (max-width: 1200px) {
+    height: 100%;
+  }
 }
 
 .hero::before {
@@ -89,6 +92,9 @@
 		&__picture {
       @media (min-width: 1800px) {
         transform: translate(-100px, 250px);
+      }
+      @media (max-width: 1200px) {
+        display: none;
       }
 		}
 

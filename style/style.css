@@ -115,6 +115,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 1200px) {
+  .hero {
+    height: 100%;
+  }
+}
 
 .hero::before {
   content: "";
@@ -203,6 +208,11 @@ body {
 @media (min-width: 1800px) {
   .hero__picture {
     transform: translate(-100px, 250px);
+  }
+}
+@media (max-width: 1200px) {
+  .hero__picture {
+    display: none;
   }
 }
 .hero__img {
