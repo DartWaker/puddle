@@ -1,13 +1,14 @@
 document.querySelector('.header__menu-gamename').addEventListener('click', (event) => {
-  event.stopPropagation(); // Запобігає закриттю меню при кліку по ньому
+  event.stopPropagation();
   const gameList = document.querySelector('.header__gamelist');
-  gameList.classList.toggle('active');
+  const isActive = gameList.classList.toggle('active');
+  document.body.style.overflow = isActive ? 'hidden' : '';
 });
 
 document.addEventListener('click', (event) => {
   const gameList = document.querySelector('.header__gamelist');
   if (!gameList.contains(event.target) && !event.target.closest('.header__menu-gamename')) {
     gameList.classList.remove('active');
+    document.body.style.overflow = '';
   }
 });
-
